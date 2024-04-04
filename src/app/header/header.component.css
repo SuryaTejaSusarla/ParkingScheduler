@@ -1,0 +1,36 @@
+.header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    color: green;
+    margin: 0; /* Removes default margin from h1 */
+}
+
+.links {
+    display: flex;
+    gap: 20px; /* Adds space between the links */
+}
+
+.link {
+    color: black; /* Change this to the desired link color */
+    text-decoration: none; /* Removes underline from the link */
+}
+
+.popup {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    top: 100%; /* Adjust if necessary */
+    left: 50%; /* Adjust if necessary */
+    transform: translate(-50%, 10px); /* Adjust for proper positioning */
+    z-index: 1000; /* Ensure it's above other elements */
+}

@@ -1,0 +1,14 @@
+<div class="header">
+    <h1 class="heading">Welcome to CSU Parking</h1>
+    <div class="links">
+        <a routerLink="/signup" class="link" (mouseover)="setPopupMessage($event,'Only guest should sign up here! Students go with CSU login!')" (mouseleave)="clearPopupMessage()">Guest Sign Up</a>
+        <a routerLink="/events" class="link" (mouseover)="setPopupMessage($event,'Check out our upcoming events!')" (mouseleave)="clearPopupMessage()">Events</a>
+        <a routerLink="/check-permit" class="link" (mouseover)="setPopupMessage($event,'Verify your parking permit status.')" (mouseleave)="clearPopupMessage()">Check Permit</a>
+        <a routerLink="/carries" class="link" (mouseover)="setPopupMessage($event,'Learn about our carry services.')" (mouseleave)="clearPopupMessage()">Carries</a>
+        <a routerLink="/faq" class="link" (mouseover)="setPopupMessage($event,'Find answers to frequently asked questions.')" (mouseleave)="clearPopupMessage()">FAQ</a>
+        <a routerLink="/request-permit" class="link" (mouseover)="setPopupMessage($event,'Request a new parking permit.')" (mouseleave)="clearPopupMessage()">Request Permit</a>
+        <a routerLink="/review-ticket" class="link" (mouseover)="setPopupMessage($event,'Review your parking tickets here.')" (mouseleave)="clearPopupMessage()">Review Ticket</a>
+        <a routerLink="/contact" class="link" (mouseover)="setPopupMessage($event,'Contact us for more information.')" (mouseleave)="clearPopupMessage()">Contact</a>
+    </div>
+    <div *ngIf="showPopup" [ngStyle]="popupPosition" class="popup">{{ currentPopupMessage }}</div>
+</div>
